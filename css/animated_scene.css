@@ -1,0 +1,89 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    width: 100vw;
+    background-color: #0b141b;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    /* background-color: black; */
+}
+
+.container all{
+    border-radius: 0;
+}
+
+.container > img{
+    width: 100%;
+}
+
+.container  div{
+    display: flex;
+    width: 200%;
+    height: 100%;
+    
+}
+
+.front{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* redondeado */
+.rounded{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+/* blur */
+.blur_container{
+    position: relative;
+    width: 80%;
+    margin: 50px 0px;
+}
+
+.blur{
+    position: absolute;
+    filter: blur(20px);
+}
+
+/* animations */
+.speed-1{
+    animation: anim 5s infinite linear;
+}
+.speed-2{
+    animation: anim 10s infinite linear;
+}
+.speed-3{
+    animation: anim 15s infinite linear;
+}
+.speed-4{
+    animation: anim 20s infinite linear;
+}
+.speed-5{
+    animation: anim 25s infinite linear;
+}
+.speed-6{
+    animation: anim 30s infinite linear;
+}
+
+.reverse{
+    animation-direction: reverse;
+}
+
+@keyframes anim{
+    to{
+        transform: translate(-50%, 0);
+    }
+}
